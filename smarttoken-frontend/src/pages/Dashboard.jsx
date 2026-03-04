@@ -46,7 +46,7 @@ function Dashboard() {
     const fetchTokens = async () => {
         try {
             const res = await axios.get(
-                "http://localhost:7985/token/all",
+                "https://token-backend-7.onrender.com/token/all",
                 {
                     headers: {
                         Authorization: "Bearer " + localStorage.getItem("token")
@@ -66,7 +66,7 @@ function Dashboard() {
             setLoading(true);
 
             const res = await axios.post(
-                "http://localhost:7985/token/generate",
+                "https://token-backend-7.onrender.com/token/generate",
                 {},
                 {
                     headers: {

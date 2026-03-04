@@ -8,7 +8,7 @@ function Login() {
 
     const handleLogin = async () => {
         try {
-            const res = await axios.post("http://localhost:7985/auth/login", {
+            const res = await axios.post("https://token-backend-7.onrender.com/auth/login", {
                 email,
                 password
             });
