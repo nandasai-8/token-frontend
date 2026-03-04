@@ -8,7 +8,7 @@ function Register() {
 
     const handleRegister = async () => {
         try {
-            await axios.post("http://localhost:7984/auth/register", {
+            await axios.post("http://localhost:7985/auth/register", {
                 email,
                 password
             });
